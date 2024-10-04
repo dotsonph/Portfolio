@@ -6,23 +6,42 @@
 </head>
 
 
-<body>
+<body onload="start_time()">
     <main>
         <div id="ceiling">
-            <p><strong>WHO AM I?</strong></p>
-            <p><strong>MY PROJECTS</strong></p>
-            <p><strong>WORK EXPERIENCE</strong></p>
-            <p><strong>CONTACT ME</strong></p>
+            <p><strong><u>WHO AM I?</u></strong></p>
+            <p><strong><u>MY PROJECTS</u></strong></p>
+            <p><strong><u>WORK EXPERIENCE</u></strong></p>
+            <p><strong><u>CONTACT ME</u></strong></p>
         </div>
-        <div>
-            <h1>DOTSON PHAM</h1>
-            <h2>PORTFOLIO / BLOG / PERSONAL DUMP</h2>
+        <hr>
+
+        <div id="clock">
+            <script>
+                function start_time() {
+                const today = new Date();
+                h = today.getHours();
+                m = today.getMinutes();
+                s = today.getSeconds();
+                m = check_time(m);
+                s = check_time(s);
+                noMilt = check_time(h);
+                document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(start_time, 1000);
+                }
+
+                function check_time(x){
+                    if (x < 10){
+                        x = "0" + x;
+                    }
+                    return x;
+                }
+            </script>
         </div>
+
+        <h1>DOTSON PHAM</h1>
+        <h2>PORTFOLIO / BLOG / PERSONAL DUMP</h2>
     </main>
-
-
-
-
 
 </body>
 </html>
