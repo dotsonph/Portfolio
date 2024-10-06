@@ -6,7 +6,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(132, 129, 107);
+    color: rgb(116, 84, 84);
     font-size:30px;
     text-align:center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -28,13 +28,24 @@ h2 {
     text-align: center;
     color: rgb(116, 84, 84);
     font-size:20px;
+} 
+
+#git {
+    font-family: monospace;
+    font-size:17px;
 }
 
-#intro {
+#text {
+    /*original color = rgb(116, 84, 84)*/
     font-family:Garamond;
-    color: rgb(116, 84, 84);
+    color: rgb(108, 106, 88);
     font-size:20px;
     text-align:center;
+    margin-bottom: 200px;
+}
+
+#first_html {
+    margin-bottom: 200px;
 }
 
 body {
