@@ -6,56 +6,73 @@
 </head>
 
 <body onload="start_time()">
-        <div id="ceiling">
-            <p><strong><u>WHO AM I?</u></strong></p>
-            <p><strong><u>MY PROJECTS</u></strong></p>
-            <p><strong><u>WORK EXPERIENCE</u></strong></p>
-            <p><strong><u>CONTACT ME</u></strong></p>
-        </div>
-        <hr>
+    <div id="ceiling">
+        <p><strong><u>WHO AM I?</u></strong></p>
+        <p><strong><u>MY PROJECTS</u></strong></p>
+        <p><strong><u>WORK EXPERIENCE</u></strong></p>
+        <p><strong><u>CONTACT ME</u></strong></p>
+    </div>
+    <hr>
 
-        <div id="clock">
-            <script>
-                function start_time() {
-                const today = new Date();
-                h = today.getHours();
-                m = today.getMinutes();
-                s = today.getSeconds();
-                m = check_time(m);
-                s = check_time(s);
-                noMilt = check_time(h);
-                document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
-                setTimeout(start_time, 1000);
-                }
+    <div id="clock">
+        <script>
+            function start_time() {
+            const today = new Date();
+            h = today.getHours();
+            m = today.getMinutes();
+            s = today.getSeconds();
+            m = check_time(m);
+            s = check_time(s);
+            document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+            setTimeout(start_time, 1000);
+            }
 
-                function check_time(x){
-                    if (x < 10){
-                        x = "0" + x;
-                    }
-                    return x;
+            function check_time(x){
+                if (x < 10){
+                    x = "0" + x;
                 }
-            </script>
-        </div>
-        <div #id ="header">
+                return x;
+            }
+        </script>    
+    </div>
+        
+    <div #id ="header">
         <h1>DOTSON PHAM</h1>
         <h2>PORTFOLIO / BLOG / PERSONAL DUMP</h2>
         </div>
         <br>
-        <div id="intro">
-            <p>
-                You found me! For some background, I recently graduated from George Mason University last May with a <strong>B.S Computer Engineering</strong> degree <br> 
-                with a <strong>concentration in Embedded Systems</strong>. Throughout my undergrad, I focused on <strong>Embedded Software Development</strong> and <strong>FPGAs</strong>. <br>
-                In other words, a lot of work with different microprocessors/development boards</strong> paired with Xilinx Vivado, Linux Shells, and various IDEs.<br>
-                Although most of my coursework prioritized computer architecture and lower-level programming, I enjoy really <em>all</em> electrical/software disciplines.<br><br>                
-                
-                This includes <strong>RF, Electronics, Kernel Driver Development, GPU Programming, Ethical Hacking, Video Game Development</strong>... You get the point.<br>
-                I simply <em>loathe</em> the idea of boxing myself in when it comes to a professional career and any particular path. I suppose I am just an unsatisfied learner.<br>
-                Realistically, I would love to work anywhere with long-term opportunity to grow and career flexibility in firmware and/or software development. Having<br> 
-                said everything, I am by no means opposed to pursuing other fields such as RF engineering, cybersecurity, AI/ML, etc... Who knows what will happen!
-                
-                
-            </p>
-        </div>
+        
+    <div id="text">
+        <p>
+            You found me! For some background, I recently graduated from George Mason University last May with a <strong>B.S Computer Engineering</strong> degree <br> 
+            with a <strong>concentration in Embedded Systems</strong>. Throughout my undergrad, I focused on <strong>Embedded Software Development</strong> and <strong>FPGAs</strong>. <br>
+            In other words, a lot of work with different microprocessors/development boards</strong> paired with Xilinx Vivado, Linux Shells, and various IDEs.<br>
+            Although most of my coursework prioritized computer architecture and lower-level programming, I enjoy really <em>all</em> electrical/software disciplines.<br><br>                
+            
+            This includes <strong>RF, Electronics, Kernel Driver Development, GPU Programming, Ethical Hacking, Video Game Development</strong>... You get the point.<br>                
+            I simply <em>loathe</em> the idea of boxing myself in when it comes to a professional career and any particular path. I suppose I am just an unsatisfied learner.<br>
+            Realistically, I would love to work anywhere with long-term opportunity to grow and career flexibility in firmware and/or software development. Having<br> 
+            said everything, I am by no means opposed to pursuing other fields such as RF engineering, cybersecurity, AI/ML, etc... Who knows what will happen!<br>
+        </p>
+    </div>
+
+    <div id="text">
+        <p id="first_html">
+            Now what am I working on you may ask? Well, this website for one. Given my background, I had zero exposure to frontend development in my undergrad.<br>
+            I might have been exposed to a scripting language early on in my highschool days, however, <em>none</em> of that knowledge was retained. Not a single line or bracket.<br>
+            I can actually show below the first HTML document with trash and jargon I compiled while learning just last week. It is safe to say there has been progress.<br>
+        </p>
+
+        <p>
+            So I basically spent time after graduating trying to hammer up this portfolio and a half-decent GitHub <strong id="git" style="color:rgb(27, 200, 0);">/** more on this for later **/</strong>.<br>
+            Thankfully a few tutorials and blogs had me up and running in days, learning <strong>HTML, CSS,</strong> and some extremely simple <strong>Javascript</strong>. Eventually I want<br>
+            to learn popular, accomodating frameworks like React, Vue.js, Vite, Tailwind CSS, and others I missed. The issue is sometimes I get caught in the habit of<br>
+            not starting something just because I feel inadequately equipped to create something "great". And that is why it took me till now to start at all... <br>
+            Basically, that will be my excuse if this website of mine appears occasionally half-baked while I do my regular tweaks.<br>
+            There is a lot for me to learn and implement overtime that is.<br>
+
+        </p>
+    </div>
 
 
 </body>
