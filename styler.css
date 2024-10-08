@@ -6,7 +6,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(108, 106, 88);
+    color: rgb(129, 126, 105);
     font-size:30px;
     text-align:center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -26,9 +26,9 @@ h2 {
 #clock {
     font-family:monospace;
     text-align: center;
-    color: rgb(108, 106, 88);
+    color: rgb(129, 126, 105);
     font-size:20px;
-    font-weight:bold;
+    font-style:oblique;
 } 
 
 #git {
@@ -39,7 +39,8 @@ h2 {
 #text {
     /*original color = rgb(116, 84, 84)*/
     font-family:Garamond;
-    color:rgb(116, 84, 84);
+    /* color:rgb(116, 84, 84); */
+    color:rgb(69, 69, 69);
     font-size:20px;
     text-align:center;
     margin-bottom: 200px;
